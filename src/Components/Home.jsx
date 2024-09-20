@@ -1,5 +1,6 @@
 import React from 'react';
 import bg from '../assets/bg.png';  // Ensure this path is correct
+import bg1 from '../assets/bg1.jpg';
 import Form from './Form';
 import box from '../assets/box.png'
 import clock from '../assets/clock.png'
@@ -9,6 +10,7 @@ import suitcase from '../assets/suitcase.png'
 import truck from '../assets/truck.png'
 import HowWeWork from './HowWeWork';
 import TestimonialSection from './TestionialSection';
+import Footer from './Footer';
 
 const services = [
     {
@@ -61,11 +63,17 @@ const Home = () => {
         <div
           className="w-full h-full bg-no-repeat bg-cover"
           style={{
-            backgroundImage: `url(${bg})`,
+            backgroundImage: `url(${bg1})`,
             backgroundPosition: 'left center',
             backgroundSize: 'cover',
           }}
         ></div>
+              <div
+      className="absolute inset-0 w-full h-full"
+      style={{
+        background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))',
+      }}
+    ></div>
       </div>
 
       {/* Content Section */}
@@ -73,6 +81,11 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Section: Text */}
           <div className="text-left ">
+            {/* <img
+              src={logo}
+              alt=""
+              className=' h-12 md:h-24 mb-8 md:mb-[100px]'
+              /> */}
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Effortless Office Relocation with IVAT
             </h1>
@@ -130,18 +143,18 @@ const Home = () => {
     </div>
 
     <div className='w-full flex justify-center items-center px-4 md:px-[200px] my-[40px]'>
-    <div className="bg-[#753100] text-white rounded-xl p-8 md:p-12 w-full text-center shadow-lg">
+    <div className="bg-amber-500 text-white rounded-xl p-8 md:p-12 w-full text-center shadow-lg">
         <h2 className="text-2xl md:text-4xl font-bold mb-4">Ready to Move?</h2>
         <p className="text-md md:text-lg mb-6">
           Contact us today for a consultation and make your office move effortless.
         </p>
-        <button className="bg-white text-[#753100] font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition-all">
+        <button className="bg-white text-amber-500 font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition-all">
           Contact us
         </button>
       </div>
       </div>
 
-      <div className='w-full flex flex-col md:flex-row justify-center items-center px-4 md:px-[200px] lg:px-[250px] my-[20px] md:my-[100px]'>
+      {/* <div className='w-full flex flex-col md:flex-row justify-center items-center px-4 md:px-[200px] lg:px-[250px] my-[20px] md:my-[100px]'>
 
         <div className='m-4 md:m-12'>
             <p className='font-bold text-2xl text-center mb-4'>Our Address</p>
@@ -166,6 +179,9 @@ const Home = () => {
             </p>
         </div>
 
+      </div> */}
+      <div>
+        <Footer />
       </div>
 
     </div>

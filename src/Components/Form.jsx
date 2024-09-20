@@ -21,7 +21,7 @@ function Form() {
                 <input
                   type="text"
                   id="username"
-                  placeholder="Username"
+                  placeholder="Name"
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-200 focus:outline-none"
                 />
               </div>
@@ -46,13 +46,13 @@ function Form() {
                 <input
                   type="tel"
                   id="company name"
-                  placeholder='Company Name'
+                  placeholder='Company name'
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-200 focus:outline-none"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-[#0181DD] text-white font-bold py-2 px-4 rounded-md "
+                className="w-full bg-blue-950 text-white font-bold py-2 px-4 rounded-md "
               >
                 Register
               </button>
