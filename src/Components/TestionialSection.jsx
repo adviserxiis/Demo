@@ -78,7 +78,7 @@ const TestimonialSection = () => {
   return (
     //style={{ backgroundImage: `url(${background})` }}
     <div className="relative py-12 bg-cover bg-center bg-[#6bd4c84d]" >
-      <div className="md:px-[200px] px-4">
+      <div className="container mx-auto px-4">
         <h2 className="text-center text-3xl md:text-6xl font-bold mb-8 font-PlayFair">Our Successful Relocation Stories</h2>
         <div className="relative">
           {/* Testimonial Container */}

@@ -3,10 +3,10 @@ import form_bg from '../assets/form_bg.png'
 
 function Form() {
   return (
-     <div className="bg-white rounded-lg shadow-lg max-w-lg ">
+     <div className="bg-white rounded-lg shadow-lg max-w-4xl  ">
             {/* <h2 className="text-2xl font-bold text-blue-700 mb-6">Start your Free Trial</h2> */}
             <div
-        className="w-full py-4 bg-no-repeat rounded-t-lg  bg-cover bg-center flex flex-col items-center justify-center  p-2"
+        className="w-full py-4 bg-no-repeat rounded-t-lg  bg-cover bg-center flex flex-col items-center justify-center md:px-4 p-2"
       >
         <h1 className="text-3xl font-semibold text-center font-Poppins">Get in Touch for a Free Consultation or Quote for office shifting</h1>
       </div>

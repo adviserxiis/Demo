@@ -7,7 +7,7 @@ import { FiMail, FiPhone, FiSend } from 'react-icons/fi';
 const Footer = () => {
   return (
     <footer className="bg-[#1A1A1E] text-white py-8 font-Poppins">
-      <div className="md:px-[200px] lg:px-[300px] mx-auto px-4">
+      <div className="container mx-auto px-4 md:px-[100px]">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* Left side: Logo and contact info */}
 
