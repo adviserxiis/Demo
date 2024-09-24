@@ -13,6 +13,9 @@ export default {
         inter:["Inter", "sans-serif"],
         PlayFair:["Playfair Display", "serif"]
       },
+      backdropBlur: {
+        'custom': '8px', // custom blur value
+      }
     },
   },
   plugins: [],

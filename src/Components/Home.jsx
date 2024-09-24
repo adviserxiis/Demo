@@ -82,33 +82,33 @@ const Home = () => {
           className="w-full h-full bg-no-repeat bg-cover"
           style={{
             backgroundImage: `url(${bg1})`,
-            backgroundPosition: 'left center',
+            backgroundPosition: 'center',
             backgroundSize: 'cover',
           }}
         ></div>
-              {/* <div
+              <div
       className="absolute inset-0 w-full h-full"
       style={{
-        background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))',
+        background: 'linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4))',
       }}
-    ></div> */}
+    ></div>
       </div>
 
       {/* Content Section */}
       <div className="container mx-auto relative z-10 px-4 py-16 md:mt-[80px]">
         <div className="grid grid-cols-1 md:grid-cols-2 md:flex md:flex-row-reverse md:justify-between gap-4 items-center">
           {/* Left Section: Text */}
-          <div className="text-left max-w-3xl  backdrop-blur-sm rounded-xl md:p-8 md:m-8 md:py-[100px] ">
-            <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
+          <div className="text-left max-w-3xl  backdrop-blur-custom rounded-xl md:p-8 md:m-8 lg:px-20">
+            <p className="text-4xl md:text-5xl font-bold text-black mb-4 leading-loose ">
               Effortless Office Relocation with IVAT
-            </h1>
-            <p className="text-white text-md ">
+            </p>
+            <p className="text-white text-md leading-loose">
             Experience a smooth, stress-free office move with our expert team. We handle every detail, ensuring minimal disruption to your business, whether local or long-distance.
             </p>
           </div>
 
           {/* Right Section: Form */}
-          <div className='md:ml-8 lg:ml-12'>
+          <div className='md:ml-8 lg:ml-12 '>
           <Form />
           </div>
 
