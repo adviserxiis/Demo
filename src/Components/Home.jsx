@@ -1,6 +1,8 @@
 import React from 'react';
 import bg from '../assets/bg.png';  // Ensure this path is correct
 import bg1 from '../assets/bg1.jpg';
+import logo from '../assets/logo.png'
+import background from '../assets/background.jpg'
 import Form from './Form';
 import box from '../assets/box.png'
 import clock from '../assets/clock.png'
@@ -56,8 +58,22 @@ const Home = () => {
 
 
   return (
-    <div>
-    <div className="min-h-screen flex  justify-center bg-white relative font-Poppins">
+    <div       className="relative w-full h-full bg-no-repeat bg-cover bg-opacity-10"         style={{
+      backgroundImage: `url(${background})`,
+      backgroundPosition: 'left center',
+      backgroundSize: 'cover',
+    }} >
+       <div className="absolute inset-0  bg-white opacity-70"></div>
+
+       <div className='h-16 md:h-28 w-full bg-white px-4 md:px-[200px] flex items-center relative z-10'>
+         <img 
+         src={logo}
+         alt=""
+         className='h-12  md:h-24'
+         />
+       </div>
+    <div className="min-h-screen flex  justify-center  relative font-Poppins"
+    >
       {/* Background Section */}
       <div className="absolute inset-0 w-full ">
         <div
@@ -71,22 +87,22 @@ const Home = () => {
               <div
       className="absolute inset-0 w-full h-full"
       style={{
-        background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))',
+        background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))',
       }}
     ></div>
       </div>
 
       {/* Content Section */}
       <div className="w-full md:mx-[200px] mx-auto relative z-10 px-4 py-16 md:mt-[80px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:flex md:flex-row-reverse md:justify-between gap-8 items-center">
           {/* Left Section: Text */}
-          <div className="text-left ">
+          <div className="text-left max-w-3xl  backdrop-blur-md rounded-xl md:p-8 md:m-8 md:py-[100px] ">
             {/* <img
               src={logo}
               alt=""
               className=' h-12 md:h-24 mb-8 md:mb-[100px]'
               /> */}
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
               Effortless Office Relocation with IVAT
             </h1>
             <p className="text-white text-md ">
@@ -104,7 +120,7 @@ const Home = () => {
       
     </div>
     
-    <div className="md:mx-[200px] mx-auto px-4 py-8 sm:py-12 lg:py-16">
+    <div className="md:mx-[200px] mx-auto px-4 py-8 sm:py-12 lg:py-16 relative z-10">
         <div className='mb-[80px]'>
     <h1 className="text-3xl md:text-6xl font-bold text-center font-PlayFair text-[#00477A]">Why Choose IVAT?</h1>
     </div>
@@ -131,18 +147,18 @@ const Home = () => {
       </div>
     </div>
 
-    <div className="md:mx-[200px] mx-auto px-4 py-8 sm:py-12 lg:py-16">
+    <div className="md:mx-[200px] mx-auto px-4 py-8 sm:py-12 lg:py-16 relative z-10">
         <div className='mb-[80px]'>
     <h1 className="text-3xl md:text-6xl font-bold text-center font-PlayFair text-[#00477A]">How We Work?</h1>
     </div>
     <HowWeWork />
     </div>
 
-    <div>
+    <div className='relative z-10'>
         <TestimonialSection />
     </div>
 
-    <div className='w-full flex justify-center items-center px-4 md:px-[200px] my-[40px]'>
+    <div className='w-full flex justify-center items-center px-4 md:px-[200px] my-[40px] relative z-10'>
     <div className="bg-amber-500 text-white rounded-xl p-8 md:p-12 w-full text-center shadow-lg">
         <h2 className="text-2xl md:text-4xl font-bold mb-4">Ready to Move?</h2>
         <p className="text-md md:text-lg mb-6">
@@ -180,7 +196,7 @@ const Home = () => {
         </div>
 
       </div> */}
-      <div>
+      <div className='relative z-10'>
         <Footer />
       </div>
 

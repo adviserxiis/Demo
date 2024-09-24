@@ -46,7 +46,7 @@ const steps = [
 
 const HowWeWork = () => {
   return (
-    <div className="flex flex-col items-center py-12 bg-white font-Poppins">
+    <div className="flex flex-col items-center py-12  font-Poppins">
       <div className="relative w-full max-w-7xl mx-auto">
         <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-200 z-0"></div>
         {steps.map((step, index) => (

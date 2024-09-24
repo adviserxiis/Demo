@@ -7,7 +7,7 @@ import { FiMail, FiPhone, FiSend } from 'react-icons/fi';
 const Footer = () => {
   return (
     <footer className="bg-[#1A1A1E] text-white py-8 font-Poppins">
-      <div className="container mx-auto px-4">
+      <div className="md:px-[200px] lg:px-[300px] mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* Left side: Logo and contact info */}
 
@@ -15,29 +15,11 @@ const Footer = () => {
           <img
               src={logo} // Replace with the actual path to your logo
               alt=""
-              className="h-12 md:h-16 mb-4"
+              className="h-16 md:h-36 mb-4"
             />
           </div>
-          <div className="flex flex-col items-center lg:items-start">
 
-            <p className="text-center lg:text-left mb-2 md:mb-4">
-              <a href="tel:+918588996655" className="flex items-center">
-                <span className="mr-2"><FiPhone /></span> +91 8588996655
-              </a>
-            </p>
-            <p className="text-center lg:text-left mb-2 md:mb-4">
-              <a href="mailto:info@ivatpackersandmovers.com" className="flex items-center">
-                <span className="mr-2"><FiMail /></span> info@ivatpackersandmovers.com
-              </a>
-            </p>
-            <p className="text-center lg:text-left flex mb-2 md:mb-4"><span className="mr-2"><FiSend /></span>
-              T-230, New Palam Vihar Ph-2, Blinkit warehouse, 40 ft road,
-              <br /> near dawarka express way, Gurugram, Haryana-122017
-            </p>
-          </div>
-
-          {/* Right side: Social icons */}
-          <div className="flex  items-center  space-x-4 mt-4 lg:mt-0">
+          <div className="flex md:flex-col items-center md:space-y-4  space-x-4 mt-4 lg:mt-0 mb-4">
             <a
               href="https://facebook.com"
               target="_blank"
@@ -71,6 +53,29 @@ const Footer = () => {
               <FaLinkedinIn size={24} />
             </a>
           </div>
+
+
+
+          <div className="flex flex-col items-center lg:items-start">
+
+            <p className="text-center lg:text-left mb-4 md:mb-6">
+              <a href="tel:+918588996655" className="flex items-center">
+                <span className="mr-2"><FiPhone /></span> +91 8588996655
+              </a>
+            </p>
+            <p className="text-center lg:text-left mb-4 md:mb-6">
+              <a href="mailto:info@ivatpackersandmovers.com" className="flex items-center">
+                <span className="mr-2"><FiMail /></span> info@ivatpackersandmovers.com
+              </a>
+            </p>
+            <p className="text-center lg:text-left flex mb-4 md:mb-6"><span className="mr-2"><FiSend /></span>
+              T-230, New Palam Vihar Ph-2, Blinkit warehouse, 40 ft road,
+              <br /> near dawarka express way, Gurugram, Haryana-122017
+            </p>
+          </div>
+
+
+
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-4">
