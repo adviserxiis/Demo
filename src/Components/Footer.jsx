@@ -68,7 +68,7 @@ const Footer = () => {
                 <span className="mr-2"><FiMail /></span> info@ivatpackersandmovers.com
               </a>
             </p>
-            <p className="text-center lg:text-left flex mb-4 md:mb-6"><span className="mr-2"><FiSend /></span>
+            <p className=" text-center lg:text-left flex mb-4 md:mb-6"><span className="mr-2"><FiSend /></span>
               T-230, New Palam Vihar Ph-2, Blinkit warehouse, 40 ft road,
               <br /> near dawarka express way, Gurugram, Haryana-122017
             </p>

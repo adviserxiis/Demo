@@ -9,35 +9,35 @@ import step5 from '../assets/step5.png'
 const steps = [
   {
     id: '01',
-    title: 'Initial Consultation',
+    title: '1. Initial Consultation',
     description: 'We begin with a detailed consultation to understand your office relocation requirements and create a tailored moving plan.',
     image: step1,
     reverse: false, // Image on the right
   },
   {
     id: '02',
-    title: 'Packing and Labeling',
+    title: '2. Packing and Labeling',
     description: 'Our team carefully packs and labels each item to ensure organized unpacking at your new office.',
     image: step2,
     reverse: true, // Image on the left
   },
   {
     id: '03',
-    title: 'Transportation',
+    title: '3. Transportation',
     description: 'We handle the transportation logistics, ensuring your belongings reach the destination safely and on schedule.',
     image: step3,
     reverse: false, // Image on the right
   },
   {
     id: '04',
-    title: 'Unpacking and Setup',
+    title: '4. Unpacking and Setup',
     description: 'Upon arrival, we unpack and set up your office according to your specifications, so you can resume business operations swiftly.',
     image: step4,
     reverse: true, // Image on the left
   },
   {
     id: '05',
-    title: 'Post-Move Support',
+    title: '5. Post-Move Support',
     description: 'Our support doesn’t end with delivery. We assist with unpacking, organizing, and settling in to ensure your office is running smoothly.',
     image:step5,
     reverse: false, // Image on the right

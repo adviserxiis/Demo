@@ -98,8 +98,8 @@ const Home = () => {
       <div className="container mx-auto relative z-10 px-4 py-16 md:mt-[80px]">
         <div className="grid grid-cols-1 md:grid-cols-2 md:flex md:flex-row-reverse md:justify-between gap-4 items-center">
           {/* Left Section: Text */}
-          <div className="text-left max-w-3xl  backdrop-blur-custom rounded-xl md:p-8 md:m-8 lg:px-20">
-            <p className="text-4xl md:text-5xl font-bold text-black mb-4 leading-loose ">
+          <div className="text-left max-w-3xl  backdrop-blur-custom rounded-xl p-4 md:p-8 md:m-8 lg:px-20">
+            <p className="text-4xl md:text-5xl font-bold text-black mb-4 md:leading-loose ">
               Effortless Office Relocation with IVAT
             </p>
             <p className="text-white text-md leading-loose">
