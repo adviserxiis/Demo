@@ -3,7 +3,7 @@ import form_bg from '../assets/form_bg.png'
 
 function Form() {
   return (
-     <div className="bg-white rounded-lg shadow-lg max-w-4xl  ">
+     <div className="bg-white rounded-lg shadow-lg max-w-4xl  xl:max-w-md mx-auto">
             {/* <h2 className="text-2xl font-bold text-blue-700 mb-6">Start your Free Trial</h2> */}
             <div
         className="w-full py-4 bg-no-repeat rounded-t-lg  bg-cover bg-center flex flex-col items-center justify-center md:px-4 p-2"
